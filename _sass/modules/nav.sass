@@ -1,0 +1,41 @@
+nav.nav-wrap
+  transition: all 0.3s ease-in
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 900
+  max-width: 1000px
+  display: flex
+  justify-content: space-between
+  margin: auto
+  padding: 40px
+  @media screen and (max-width: 600px)
+    padding: 35px 20p
+  a.nav-logo
+    height: 50px
+    width: 50px
+    border-radius: 1000%
+    background: 
+      image: url('../img/lackrack.png')
+      size: cover
+      position: center center
+      repeat: no-repeat
+  ul.navigation
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: 600px)
+      display: none
+    li
+      display: block
+      padding-right: 30px
+      a
+        transition: all .015s ease-in
+        font-size: 1em
+      a:hover
+        color: darken($light, 25%)
+    li:last-of-type
+      padding-right: 0
+      
