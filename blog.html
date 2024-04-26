@@ -1,0 +1,19 @@
+---
+layout: default
+permalink: blog.html
+---
+
+{% include nav.html %}
+
+<ul class="blog-container">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">
+        <div>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.description }}</p>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
